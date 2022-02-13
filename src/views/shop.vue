@@ -1,9 +1,9 @@
 <template  >
-<div   class="bg-image d-flex justify-content-center align-items-center"
+<div  class="bg-image d-flex justify-content-center align-items-center"
      style="
             background-image: url('https://mdbootstrap.com/img/new/fluid/nature/015.jpg');
             
-            ">
+            " >
   <v-container >
     
     <center><h1 class="text-info">Product Page</h1></center>
@@ -88,7 +88,7 @@ export default {
           imageurl:
             "https://mpics.mgronline.com/pics/Images/564000005705101.JPEG",
           rightText: "price : 25 * 4 =100",
-          leftText: "Size : EU 31-45",
+          leftText: "",
           producturl: "https://www.kito.co.th/product/move-twotone-ah81/",
           rightUrl:
             "https://www.kito.co.th/product-category/women/women-sandals/",
@@ -103,7 +103,7 @@ export default {
           imageurl:
             "https://res.cloudinary.com/dk0z4ums3/image/upload/v1500968063/attached_image_th/%25e0%25b8%25aa%25e0%25b9%2589%25e0%25b8%25a1.jpg",
           rightText: "price : 199",
-          leftText: "Size : EU 31-45",
+          leftText: "",
           producturl: "https://www.kito.co.th/product/move-twotone-ah81/",
           rightUrl:
             "https://www.kito.co.th/product-category/women/women-sandals/",

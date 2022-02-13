@@ -21,14 +21,14 @@
           <v-card-title>{{ i.name }}</v-card-title>
         </v-img>
 
-        <v-card-subtitle class="pb-0">{{ i.rightText }}</v-card-subtitle>
+        <v-card-subtitle class="pb-0 ">{{ i.rightText }}</v-card-subtitle>
 
         <v-card-text class="text--primary">
           <div>{{ i.leftText }}</div>
         </v-card-text>
 
         <v-card-actions>
-          <v-btn color="info" text :to="'/detail/' + i.name">detail</v-btn>
+          <v-btn  color="info" text :to="'/detail/' + i.name">detail</v-btn>
           <v-btn color="orange" text @click="selected(i)"> Add </v-btn>
          
         </v-card-actions>
@@ -75,7 +75,6 @@ export default {
             "https://www.slang-aholic.com/wp-content/uploads/2014/07/0457-716x400.jpg",
           rightText: "price : ในราคาประหยัดที่สามารถสืบข้อมูลได้ทุกเรื่อง เพียง! 3000",
           leftText: "",
-          producturl: "https://www.kito.co.th/product/move-twotone-ah81/",
           rightUrl:
             "https://www.kito.co.th/product-category/women/women-sandals/",
           ctaText: "Shop Now",
@@ -85,7 +84,7 @@ export default {
 
         {
          
-          name: "แตงโมลูกแดงๆ ถ้าเขียวไม่ใช่แตงโมละ! ลูกละ25 4ลูก 100! ",
+          name: "แตงโมลูกแดงๆ ถ้าเขียวไม่ใช่แตงโมละ! ลูกละ25 3ลูก 100! ",
           imageurl:
             "https://mpics.mgronline.com/pics/Images/564000005705101.JPEG",
           rightText: "price : 25 * 4 =100",
@@ -100,7 +99,7 @@ export default {
 
         {
          
-          name: "ส้มไง ดูไงก็สม!! ไม่หวานแต่เปลือกขม 99 บาท ไม่รวมส่ง",
+          name: "ส้มไง ดูไงก็สม!! ไม่หวานแต่เปลือกขม (99) บาท ไม่รวมส่ง",
           imageurl:
             "https://res.cloudinary.com/dk0z4ums3/image/upload/v1500968063/attached_image_th/%25e0%25b8%25aa%25e0%25b9%2589%25e0%25b8%25a1.jpg",
           rightText: "price : 199",
@@ -136,5 +135,34 @@ export default {
 <style>
 h2 {
   color: white;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+h1 {
+  background: linear-gradient(80deg, #0094ce, #cdeb25);
+  background-size: 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 2s infinite;
+}
+.text-danger {
+  background: linear-gradient(80deg, #a71aed, #25eb46);
+  background-size: 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 2s infinite;
+}
+.white{
+  background: linear-gradient(80deg, #a71aed, #25eb46);
+  background-size: 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 2s infinite;
 }
 </style>

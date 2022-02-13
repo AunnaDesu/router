@@ -1,7 +1,10 @@
 <template  >
 <div  class="bg-image d-flex justify-content-center align-items-center"
      style="
-            background-image: url('https://mdbootstrap.com/img/new/fluid/nature/015.jpg');
+            background-image: url('https://images7.alphacoders.com/992/thumb-1920-992404.jpg');
+            height: 100%
+            
+            
             
             " >
   <v-container >
@@ -26,10 +29,8 @@
 
         <v-card-actions>
           <v-btn color="info" text :to="'/detail/' + i.name">detail</v-btn>
-          <v-btn color="orange" text > Add </v-btn>
-          <div class="card-footer">
-            <input type="checkbox" class="form-control" @change="selected(i)" />
-          </div>
+          <v-btn color="orange" text @click="selected(i)"> Add </v-btn>
+         
         </v-card-actions>
       </v-card>
     </v-container>
